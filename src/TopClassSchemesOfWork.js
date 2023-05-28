@@ -102,7 +102,7 @@ const TopClassSchemesOfWork = () => {
             </Col>
           ))
         ) : (
-          <p>No Results Found</p>
+          <p style={{ color: 'red' }}>No Results Found! Please Try Again Using Different Keywords...</p> // Display in red color
         )}
       </Row>
     </div>
