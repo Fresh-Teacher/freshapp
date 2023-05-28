@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const MiddleClassPastPapers = () => {
+const TopClassPastPapers = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const MiddleClassPastPapers = () => {
 
   return (
     <div>
-      <h1>Middle Class Past Papers</h1>
+      <h1>Top Class Past Papers</h1>
       <Row xs={1} sm={2} md={3} lg={4} xl={4} xxl={4} className="g-4">
         {lessonNotes.map((note, index) => (
           <Col key={index}>
@@ -75,4 +75,4 @@ const MiddleClassPastPapers = () => {
   );
 };
 
-export default MiddleClassPastPapers;
+export default TopClassPastPapers;
