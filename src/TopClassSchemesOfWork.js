@@ -11,127 +11,19 @@ const TopClassSchemesOfWork = () => {
 
   useEffect(() => {
     const sampleData = [
-        {
-            title: 'Top Class Schemes of Work',
-            description: 'This is the description of Lesson Note 1.',
-            price: 10000,
-            link: 'https://example.com/lesson-note-1',
-          },
-          {
-            title: 'Top Class English Schemes of Work',
-            description: 'This is the description of Lesson Note 2.',
-            price: 15000,
-            link: 'https://example.com/lesson-note-2',
-          },
-          {
-            title: 'Top Class Schemes of Work',
-            description: 'This is the description of Lesson Note 1.',
-            price: 25000,
-            link: 'https://example.com/lesson-note-1',
-          },
-          {
-            title: 'Top Class English Schemes of Work',
-            description: 'This is the description of Lesson Note 2.',
-            price: 30500,
-            link: 'https://example.com/lesson-note-2',
-          },
-          {
-            title: 'Top Class Schemes of Work',
-            description: 'This is the description of Lesson Note 1.',
-            price: 55000,
-            link: 'https://example.com/lesson-note-1',
-          },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 2000,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 1500,
-        link: 'https://example.com/lesson-note-2',
-      },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 1000,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 2500,
-        link: 'https://example.com/lesson-note-2',
-      },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 5000,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 3500,
-        link: 'https://example.com/lesson-note-2',
-      },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 2800,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 500,
-        link: 'https://example.com/lesson-note-2',
-      },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 4500,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 3000,
-        link: 'https://example.com/lesson-note-2',
-      },
       {
         title: 'Top Class Schemes of Work',
         description: 'This is the description of Lesson Note 1.',
         price: 10000,
-        link: 'https://example.com/lesson-note-1',
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
       },
       {
         title: 'Top Class English Schemes of Work',
         description: 'This is the description of Lesson Note 2.',
         price: 15000,
-        link: 'https://example.com/lesson-note-2',
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
       },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 25000,
-        link: 'https://example.com/lesson-note-1',
-      },
-      {
-        title: 'Top Class English Schemes of Work',
-        description: 'This is the description of Lesson Note 2.',
-        price: 30500,
-        link: 'https://example.com/lesson-note-2',
-      },
-      {
-        title: 'Top Class Schemes of Work',
-        description: 'This is the description of Lesson Note 1.',
-        price: 55000,
-        link: 'https://example.com/lesson-note-1',
-      },
-      
+      // Add more lesson notes here
     ];
 
     setLessonNotes(sampleData);
@@ -188,11 +80,8 @@ const TopClassSchemesOfWork = () => {
                   <Button
                     variant="primary"
                     style={{ width: '100%', marginBottom: '10px' }}
-                    onClick={() => {
-                      if (note.price !== 0) {
-                        window.location.href = note.link;
-                      }
-                    }}
+                    href={note.link}
+                    download=""
                   >
                     {note.price !== 0 ? (
                       <>
@@ -207,6 +96,9 @@ const TopClassSchemesOfWork = () => {
                   <Button
                     variant="primary"
                     style={{ width: '100%', marginBottom: '10px' }}
+                    onClick={() => {
+                      window.open(note.link, '_blank');
+                    }}
                   >
                     <span style={{ marginRight: '10px' }}>
                       <strong>Preview</strong> <FiEye />
@@ -217,7 +109,9 @@ const TopClassSchemesOfWork = () => {
             </Col>
           ))
         ) : (
-          <p style={{ color: 'red' }}>No Results Found! Please Try Searching Again Using Different Keywords...</p>
+          <p style={{ color: 'red' }}>
+            No Results Found! Please Try Searching Again Using Different Keywords...
+          </p>
         )}
       </Row>
     </div>
