@@ -252,7 +252,7 @@ const SeniorThreeLessonNotes = () => {
                     </span>
                   )}
                   <Button
-                    variant="Senior"
+                    variant="Primary"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => handlePreview(note)}
                   >
@@ -261,7 +261,7 @@ const SeniorThreeLessonNotes = () => {
                     </span>
                   </Button>
                   <Button
-                    variant="Senior"
+                    variant="Primary"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => {
                       if (note.price !== 0) {
