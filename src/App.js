@@ -2,6 +2,8 @@ import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTopButton from './ScrollToTopButton';
+import './ScrollToTopButton.css';
 
 
 // Past Papers
@@ -298,6 +300,7 @@ const App = () => {
         <Route path="/resources/:academicClass" element={<ResourceButtons />} />
         <Route path="/resources/:academicClass/:resource" element={<ResourceSubjects />} />
       </Routes>
+      <ScrollToTopButton />
     </Router>
   );
 };
