@@ -17,6 +17,10 @@ const PDFViewer = ({ fileUrl, scrollToPdf, onClose }) => {
     }
   }, [scrollToPdf]);
 
+  useEffect(() => {
+    setPageNumber(1); // Reset the pageNumber to 1 whenever the fileUrl changes
+  }, [fileUrl]);
+
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
   };
@@ -51,7 +55,11 @@ const PDFViewer = ({ fileUrl, scrollToPdf, onClose }) => {
         <Document
           file={fileUrl}
           onLoadSuccess={onDocumentLoadSuccess}
-          options={{ workerSrc: '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.worker.js' }}
+          options={{
+            workerSrc: '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.worker.js',
+            cMapUrl: 'cmaps/',
+            cMapPacked: true,
+          }}
         >
           <Page pageNumber={pageNumber} width={window.innerWidth} />
         </Document>

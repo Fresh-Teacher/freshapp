@@ -3,74 +3,293 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FiDownload, FiEye } from 'react-icons/fi';
+import PDFViewer from './PDFViewer';
 
 const TopClassPastPapers = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedNote, setSelectedNote] = useState(null);
+  const [scrollToPdf, setScrollToPdf] = useState(false);
 
   useEffect(() => {
     const sampleData = [
       {
-        title: 'Lesson Note 1',
-        description: 'This is the description of Lesson Note 1.',
-        price: '10',
-        link: 'https://example.com/lesson-note-1',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 10000,
+        link: 'https://freshteacher.software/sample.pdf',
       },
       {
-        title: 'Lesson Note 2',
-        description: 'This is the description of Lesson Note 2.',
-        price: '15',
-        link: 'https://example.com/lesson-note-2',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 15000,
+        link: 'https://freshteacher.software/sample.pdf',
       },
       {
-        title: 'Lesson Note 2',
-        description: 'This is the description of Lesson Note 2.',
-        price: '15',
-        link: 'https://example.com/lesson-note-2',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 25000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 55000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 2000,
+        link: 'https://freshteacher.software/sample.pdf',
       },{
-        title: 'Lesson Note 2',
-        description: 'This is the description of Lesson Note 2.',
-        price: '15',
-        link: 'https://example.com/lesson-note-2',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 10000,
+        link: 'https://freshteacher.software/sample.pdf',
       },
       {
-        title: 'Lesson Note 2',
-        description: 'This is the description of Lesson Note 2.',
-        price: '15',
-        link: 'https://example.com/lesson-note-2',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 15000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 25000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 55000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 2000,
+        link: 'https://freshteacher.software/sample.pdf',
       },{
-        title: 'Lesson Note 2',
-        description: 'This is the description of Lesson Note 2.',
-        price: '15',
-        link: 'https://example.com/lesson-note-2',
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 10000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 15000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 25000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 55000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 2500,
+        link: 'https://freshteacher.software/sample.pdf',
+      },{
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 37000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 13000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 45000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 57500,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 24800,
+        link: 'https://freshteacher.software/sample.pdf',
+      },{
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 86000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 11000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 29000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 95000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 29000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },{
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 12400,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 15800,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 82000,
+        link: 'https://freshteacher.software/sample.pdf',
+      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 53000,
+        link: 'https://freshteacher.software/sample.pdf',      },
+      {
+        title: 'Past Papers',
+        description: 'Top Class',
+        price: 13000,
+        link: 'https://freshteacher.software/sample.pdf',
       },
     ];
 
     setLessonNotes(sampleData);
   }, []);
 
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handlePreview = (note) => {
+    setSelectedNote(note);
+    setScrollToPdf(true);
+  };
+
+  const handleClosePreview = () => {
+    setSelectedNote(null);
+    setScrollToPdf(false);
+  };
+
+  const filteredNotes = lessonNotes.filter((note) => {
+    const { title, description } = note;
+    const query = searchQuery.toLowerCase();
+    return title.toLowerCase().includes(query) || description.toLowerCase().includes(query);
+  });
+
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
       <h1>Top Class Past Papers</h1>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+        <input
+          type="text"
+          placeholder="Search this page..."
+          value={searchQuery}
+          onChange={handleSearch}
+        />
+      </div>
       <Row xs={1} sm={2} md={3} lg={4} xl={4} xxl={4} className="g-4">
-        {lessonNotes.map((note, index) => (
-          <Col key={index}>
-            <Card className="h-100">
-              <Card.Body>
-                <Card.Title>{note.title}</Card.Title>
-                <Card.Text>{note.description}</Card.Text>
-                <Button
-                  variant="primary"
-                  onClick={() => {
-                    window.location.href = note.link;
-                  }}
-                >
-                  Download (Price: {note.price})
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+        {filteredNotes.length > 0 ? (
+          filteredNotes.map((note, index) => (
+            <Col key={index}>
+              <Card className="h-100 custom-card">
+                <Card.Body>
+                  <Card.Title>{note.title}</Card.Title>
+                  <Card.Text>{note.description}</Card.Text>
+                  {note.price !== 0 && (
+                    <span
+                      className="free-banner"
+                      style={{
+                        position: 'absolute',
+                        top: '0',
+                        right: '0',
+                        backgroundColor: '#28a745',
+                        color: '#fff',
+                        padding: '1px 10px',
+                        fontWeight: 'bold',
+                        fontStyle: 'italic',
+                        fontSize: '12px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      <strike>{note.price.toLocaleString()}/=</strike> FREE
+                    </span>
+                  )}
+                  <Button
+                    variant="primary"
+                    style={{ width: '100%', marginBottom: '10px' }}
+                    onClick={() => handlePreview(note)}
+                  >
+                    <span style={{ marginRight: '10px' }}>
+                      <strong>Preview</strong> <FiEye />
+                    </span>
+                  </Button>
+                  <Button
+                    variant="primary"
+                    style={{ width: '100%', marginBottom: '10px' }}
+                    onClick={() => {
+                      if (note.price !== 0) {
+                        window.location.href = note.link;
+                      }
+                    }}
+                  >
+                    {note.price !== 0 ? (
+                      <>
+                        <span style={{ marginLeft: '10px' }}>
+                          <strong>Download</strong> <FiDownload />
+                        </span>
+                      </>
+                    ) : (
+                      'FREE'
+                    )}
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))
+        ) : (
+          <p style={{ color: 'red' }}>No Results Found! Please Try Searching Again Using Different Keywords...</p>
+        )}
       </Row>
+      {selectedNote && (
+        <PDFViewer fileUrl={selectedNote.link} scrollToPdf={scrollToPdf} onClose={handleClosePreview} />
+      )}
     </div>
   );
 };
