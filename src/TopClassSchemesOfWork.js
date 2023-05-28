@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FiDownload, FiEye, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiDownload, FiEye } from 'react-icons/fi';
 import PDFViewer from './PDFViewer';
 
 const TopClassSchemesOfWork = () => {
@@ -60,24 +60,10 @@ const TopClassSchemesOfWork = () => {
 
   const handlePreview = (note) => {
     setSelectedNote(note);
-    document.body.style.overflow = 'hidden'; // Disable scrolling of background content
   };
 
   const handleClosePreview = () => {
     setSelectedNote(null);
-    document.body.style.overflow = ''; // Enable scrolling of background content
-  };
-
-  const handlePrevious = () => {
-    // Handle previous page navigation within the PDF viewer
-    // Add your logic here to navigate to the previous page
-    console.log('Previous page clicked');
-  };
-
-  const handleNext = () => {
-    // Handle next page navigation within the PDF viewer
-    // Add your logic here to navigate to the next page
-    console.log('Next page clicked');
   };
 
   const filteredNotes = lessonNotes.filter((note) => {
@@ -161,34 +147,7 @@ const TopClassSchemesOfWork = () => {
         )}
       </Row>
       {selectedNote && (
-        <div
-          style={{
-            position: 'fixed',
-            top: '0',
-            left: '0',
-            right: '0',
-            bottom: '0',
-            zIndex: '9999',
-            background: 'rgba(0, 0, 0, 0.5)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            overflow: 'auto', // Enable scrolling within the PDF viewer
-          }}
-        >
-          <PDFViewer fileUrl={selectedNote.link} onClose={handleClosePreview}>
-            <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
-              <Button variant="light" onClick={handlePrevious}>
-                <FiChevronLeft />
-              </Button>
-            </div>
-            <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
-              <Button variant="light" onClick={handleNext}>
-                <FiChevronRight />
-              </Button>
-            </div>
-          </PDFViewer>
-        </div>
+        <PDFViewer fileUrl={selectedNote.link} onClose={handleClosePreview} />
       )}
     </div>
   );
