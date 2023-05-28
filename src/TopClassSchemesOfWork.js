@@ -40,9 +40,9 @@ const TopClassSchemesOfWork = () => {
   });
 
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
       <h1>Top Class Schemes Of Work</h1>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '10px' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
         <input
           type="text"
           placeholder="Search this page..."
@@ -86,7 +86,7 @@ const TopClassSchemesOfWork = () => {
                           FREE
                         </span>
                         <span style={{ marginLeft: '10px' }}>
-                          <strong>DOWNLOAD</strong> <FiDownload />
+                          <strong>Download</strong> <FiDownload />
                         </span>
                       </>
                     ) : (
