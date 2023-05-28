@@ -3,11 +3,13 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FiDownload, FiEye } from 'react-icons/fi';
+import { FiDownload, FiEye, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import PDFViewer from './PDFViewer';
 
 const TopClassSchemesOfWork = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedNote, setSelectedNote] = useState(null);
 
   useEffect(() => {
     const sampleData = [
@@ -23,7 +25,30 @@ const TopClassSchemesOfWork = () => {
         price: 15000,
         link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
       },
-      // Add more lesson notes here
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
+      },
+      {
+        title: 'Top Class English Schemes of Work',
+        description: 'This is the description of Lesson Note 2.',
+        price: 30500,
+        link: 'https://example.com/lesson-note-2',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },
     ];
 
     setLessonNotes(sampleData);
@@ -31,6 +56,28 @@ const TopClassSchemesOfWork = () => {
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
+  };
+
+  const handlePreview = (note) => {
+    setSelectedNote(note);
+    document.body.style.overflow = 'hidden'; // Disable scrolling of background content
+  };
+
+  const handleClosePreview = () => {
+    setSelectedNote(null);
+    document.body.style.overflow = ''; // Enable scrolling of background content
+  };
+
+  const handlePrevious = () => {
+    // Handle previous page navigation within the PDF viewer
+    // Add your logic here to navigate to the previous page
+    console.log('Previous page clicked');
+  };
+
+  const handleNext = () => {
+    // Handle next page navigation within the PDF viewer
+    // Add your logic here to navigate to the next page
+    console.log('Next page clicked');
   };
 
   const filteredNotes = lessonNotes.filter((note) => {
@@ -67,7 +114,7 @@ const TopClassSchemesOfWork = () => {
                         right: '0',
                         backgroundColor: '#28a745',
                         color: '#fff',
-                        padding: '1px 10px',  // Adjusted padding here
+                        padding: '1px 10px', // Adjusted padding here
                         fontWeight: 'bold',
                         fontStyle: 'italic',
                         fontSize: '12px',
@@ -80,8 +127,20 @@ const TopClassSchemesOfWork = () => {
                   <Button
                     variant="primary"
                     style={{ width: '100%', marginBottom: '10px' }}
-                    href={note.link}
-                    download=""
+                    onClick={() => handlePreview(note)}
+                  >
+                    <span style={{ marginRight: '10px' }}>
+                      <strong>Preview</strong> <FiEye />
+                    </span>
+                  </Button>
+                  <Button
+                    variant="primary"
+                    style={{ width: '100%', marginBottom: '10px' }}
+                    onClick={() => {
+                      if (note.price !== 0) {
+                        window.location.href = note.link;
+                      }
+                    }}
                   >
                     {note.price !== 0 ? (
                       <>
@@ -93,27 +152,44 @@ const TopClassSchemesOfWork = () => {
                       'FREE'
                     )}
                   </Button>
-                  <Button
-                    variant="primary"
-                    style={{ width: '100%', marginBottom: '10px' }}
-                    onClick={() => {
-                      window.open(note.link, '_blank');
-                    }}
-                  >
-                    <span style={{ marginRight: '10px' }}>
-                      <strong>Preview</strong> <FiEye />
-                    </span>
-                  </Button>
                 </Card.Body>
               </Card>
             </Col>
           ))
         ) : (
-          <p style={{ color: 'red' }}>
-            No Results Found! Please Try Searching Again Using Different Keywords...
-          </p>
+          <p style={{ color: 'red' }}>No Results Found! Please Try Searching Again Using Different Keywords...</p>
         )}
       </Row>
+      {selectedNote && (
+        <div
+          style={{
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            right: '0',
+            bottom: '0',
+            zIndex: '9999',
+            background: 'rgba(0, 0, 0, 0.5)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            overflow: 'auto', // Enable scrolling within the PDF viewer
+          }}
+        >
+          <PDFViewer fileUrl={selectedNote.link} onClose={handleClosePreview}>
+            <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
+              <Button variant="light" onClick={handlePrevious}>
+                <FiChevronLeft />
+              </Button>
+            </div>
+            <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
+              <Button variant="light" onClick={handleNext}>
+                <FiChevronRight />
+              </Button>
+            </div>
+          </PDFViewer>
+        </div>
+      )}
     </div>
   );
 };
