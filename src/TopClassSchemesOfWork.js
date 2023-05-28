@@ -61,7 +61,9 @@ const TopClassSchemesOfWork = () => {
                   <Button
                     variant="primary"
                     onClick={() => {
-                      window.location.href = note.link;
+                      if (note.price !== 0) {
+                        window.location.href = note.link;
+                      }
                     }}
                   >
                     {note.price !== 0 ? (
@@ -81,6 +83,8 @@ const TopClassSchemesOfWork = () => {
                             fontSize: '12px',
                             borderRadius: '8px',
                             marginBottom: '5px',
+                            pointerEvents: 'none', // Make the banner non-clickable
+                            cursor: 'default', // Prevent cursor change to hand
                           }}
                         >
                           FREE
