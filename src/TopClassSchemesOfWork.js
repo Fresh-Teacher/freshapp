@@ -10,6 +10,7 @@ const TopClassSchemesOfWork = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedNote, setSelectedNote] = useState(null);
+  const [scrollToPdf, setScrollToPdf] = useState(false);
 
   useEffect(() => {
     const sampleData = [
@@ -32,10 +33,149 @@ const TopClassSchemesOfWork = () => {
         link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
       },
       {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },{
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 10000,
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
+      },
+      {
         title: 'Top Class English Schemes of Work',
         description: 'This is the description of Lesson Note 2.',
-        price: 30500,
-        link: 'https://example.com/lesson-note-2',
+        price: 15000,
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },{
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 10000,
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
+      },
+      {
+        title: 'Top Class English Schemes of Work',
+        description: 'This is the description of Lesson Note 2.',
+        price: 15000,
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },{
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 10000,
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
+      },
+      {
+        title: 'Top Class English Schemes of Work',
+        description: 'This is the description of Lesson Note 2.',
+        price: 15000,
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },{
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 10000,
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
+      },
+      {
+        title: 'Top Class English Schemes of Work',
+        description: 'This is the description of Lesson Note 2.',
+        price: 15000,
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 55000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20-%20ENGLISH%20HOLIDAY%20WORK%20KINGS%20SCHOOL%20KABOWA.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 2000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20APTITUDE%20PRE-JAB%20EXAM%20TERM%203%202018.pdf',
+      },{
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 10000,
+        link: 'https://freshteacher.software/2016_1-Baby-Class.pdf',
+      },
+      {
+        title: 'Top Class English Schemes of Work',
+        description: 'This is the description of Lesson Note 2.',
+        price: 15000,
+        link: 'https://freshteacher.software/TOP-CLASS-SET%20I.pdf',
+      },
+      {
+        title: 'Top Class Schemes of Work',
+        description: 'This is the description of Lesson Note 1.',
+        price: 25000,
+        link: 'https://freshteacher.software/BABY%20CLASS%20%20RECESS%20PACKAGE,%202020%20HORMISDALLEN%20SCHOOLS%20pdf.pdf',
       },
       {
         title: 'Top Class Schemes of Work',
@@ -60,10 +200,12 @@ const TopClassSchemesOfWork = () => {
 
   const handlePreview = (note) => {
     setSelectedNote(note);
+    setScrollToPdf(true);
   };
 
   const handleClosePreview = () => {
     setSelectedNote(null);
+    setScrollToPdf(false);
   };
 
   const filteredNotes = lessonNotes.filter((note) => {
@@ -100,7 +242,7 @@ const TopClassSchemesOfWork = () => {
                         right: '0',
                         backgroundColor: '#28a745',
                         color: '#fff',
-                        padding: '1px 10px', // Adjusted padding here
+                        padding: '1px 10px',
                         fontWeight: 'bold',
                         fontStyle: 'italic',
                         fontSize: '12px',
@@ -147,7 +289,7 @@ const TopClassSchemesOfWork = () => {
         )}
       </Row>
       {selectedNote && (
-        <PDFViewer fileUrl={selectedNote.link} onClose={handleClosePreview} />
+        <PDFViewer fileUrl={selectedNote.link} scrollToPdf={scrollToPdf} onClose={handleClosePreview} />
       )}
     </div>
   );
