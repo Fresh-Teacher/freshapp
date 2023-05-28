@@ -252,7 +252,7 @@ const SeniorFiveSchemesOfWork = () => {
                     </span>
                   )}
                   <Button
-                    variant="Primary"
+                    variant="primary"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => handlePreview(note)}
                   >
@@ -261,7 +261,7 @@ const SeniorFiveSchemesOfWork = () => {
                     </span>
                   </Button>
                   <Button
-                    variant="Primary"
+                    variant="primary"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => {
                       if (note.price !== 0) {
