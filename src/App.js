@@ -4,6 +4,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTopButton from './ScrollToTopButton';
 import './ScrollToTopButton.css';
+import NavBar from './NavBar';
+import './NavBar.css';
 
 
 // Past Papers
@@ -294,6 +296,8 @@ const Home = () => {
 const App = () => {
   return (
     <Router>
+      {/* Include the NavBar component */}
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/class/:academicLevel" element={<ClassButtons />} />
@@ -304,5 +308,6 @@ const App = () => {
     </Router>
   );
 };
+
 
 export default App;
