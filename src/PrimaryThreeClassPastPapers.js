@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { FiDownload, FiEye } from 'react-icons/fi';
 import PDFViewer from './PDFViewer';
 
-const PrimaryFiveClassPastPapers = () => {
+const PrimaryThreeClassPastPapers = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedNote, setSelectedNote] = useState(null);
@@ -16,175 +16,175 @@ const PrimaryFiveClassPastPapers = () => {
     const sampleData = [
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 2000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 2000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 2500,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 37000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 13000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 45000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 57500,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 24800,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 86000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 11000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 29000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 95000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 29000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 12400,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 15800,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 82000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 53000,
         link: 'https://freshteacher.software/sample.pdf',      },
       {
         title: 'Past Papers',
-        description: 'Primary Five',
+        description: 'Primary Three',
         price: 13000,
         link: 'https://freshteacher.software/sample.pdf',
       },
@@ -215,7 +215,7 @@ const PrimaryFiveClassPastPapers = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Primary Five Class Past Papers</h1>
+      <h1>Primary Three Class Past Papers</h1>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
         <input
           type="text"
@@ -294,4 +294,4 @@ const PrimaryFiveClassPastPapers = () => {
   );
 };
 
-export default PrimaryFiveClassPastPapers;
+export default PrimaryThreeClassPastPapers;

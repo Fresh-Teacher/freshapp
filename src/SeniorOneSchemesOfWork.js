@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { FiDownload, FiEye } from 'react-icons/fi';
 import PDFViewer from './PDFViewer';
 
-const PrimaryFiveSchemesOfWork = () => {
+const SeniorOneSchemesOfWork = () => {
   const [lessonNotes, setLessonNotes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedNote, setSelectedNote] = useState(null);
@@ -16,175 +16,175 @@ const PrimaryFiveSchemesOfWork = () => {
     const sampleData = [
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 2000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 2000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 10000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 15000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 25000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 55000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 2500,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 37000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 13000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 45000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 57500,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 24800,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 86000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 11000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 29000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 95000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 29000,
         link: 'https://freshteacher.software/sample.pdf',
       },{
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 12400,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 15800,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 82000,
         link: 'https://freshteacher.software/sample.pdf',
       },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 53000,
         link: 'https://freshteacher.software/sample.pdf',      },
       {
         title: 'Schemes of Work',
-        description: 'Primary Five',
+        description: 'Senior One',
         price: 13000,
         link: 'https://freshteacher.software/sample.pdf',
       },
@@ -215,7 +215,7 @@ const PrimaryFiveSchemesOfWork = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Primary Five Class Schemes of Work</h1>
+      <h1>Senior One Class Schemes of Work</h1>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
         <input
           type="text"
@@ -252,7 +252,7 @@ const PrimaryFiveSchemesOfWork = () => {
                     </span>
                   )}
                   <Button
-                    variant="primary"
+                    variant="Senior"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => handlePreview(note)}
                   >
@@ -261,7 +261,7 @@ const PrimaryFiveSchemesOfWork = () => {
                     </span>
                   </Button>
                   <Button
-                    variant="primary"
+                    variant="Senior"
                     style={{ width: '100%', marginBottom: '10px' }}
                     onClick={() => {
                       if (note.price !== 0) {
@@ -294,4 +294,4 @@ const PrimaryFiveSchemesOfWork = () => {
   );
 };
 
-export default PrimaryFiveSchemesOfWork;
+export default SeniorOneSchemesOfWork;
