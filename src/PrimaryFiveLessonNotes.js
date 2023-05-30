@@ -15,11 +15,42 @@ const PrimaryFiveLessonNotes = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P. 5 Lesson notes Mathematics ALL Terms',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P. 5 Lesson notes Mathematics ALL Terms.pdf',
+      },
+      {
+        title: 'P.5 English lesson notes Terms I - III',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.5 English lesson notes Terms I - III.pdf',
+      },
+      {
+        title: 'P.5 Lesson Notes SST All Terms',
+        description: 'Social Studies',
+        price: 5000,
+        link: 'https://freshteacher.software/P.5 Lesson Notes SST All Terms.pdf',
+      },
+      {
+        title: 'P.5 Science Lesson Notes',
+        description: 'Science',
+        price: 5000,
+        link: 'https://freshteacher.software/P.5 Science Lesson Notes.pdf',
+      },
+      {
+        title: 'CRE NOTES P.5. ALL TERMS',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/CRE NOTES P.5. ALL TERMS.pdf',
+      },
+      {
         title: 'P.5 COMPOSITION AND COMPREHENSION LESSON NOTES TERM 2',
         description: 'English',
         price: 10000,
         link: 'https://freshteacher.software/P.5 COMPOSITION AND COMPREHENSION LESSON NOTES TERM 2.pdf',
       },
+      
       {
         title: 'P.5 COMPOSITION AND COMPREHENSION LESSON NOTES TERM III',
         description: 'English',
