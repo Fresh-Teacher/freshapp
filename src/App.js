@@ -188,7 +188,7 @@ const ResourceSubjects = () => {
   return (
     <div>
       {ResourceComponent ? (
-        <Suspense fallback={<div>Loading content...</div>}>
+        <Suspense fallback={<div>Searching for content...🔎</div>}>
           <ResourceComponent />
         </Suspense>
       ) : (
