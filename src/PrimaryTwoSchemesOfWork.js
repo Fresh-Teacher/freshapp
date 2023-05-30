@@ -15,6 +15,84 @@ const PrimaryTwoSchemesOfWork = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.2 english scheme of work.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/p.2 english scheme of work.pdf',
+      },
+      {
+        title: 'P.2 LIT.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 LIT.pdf',
+      },
+      {
+        title: 'P.2 math scheme.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 math scheme.pdf',
+      },
+      {
+        title: 'P.2 P.E scheme.pdf',
+        description: 'Physical Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 P.E scheme.pdf',
+      },
+      {
+        title: 'P.2 R.E SCHEME OF WORK TERM 2 AND 3.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 R.E SCHEME OF WORK TERM 2 AND 3.pdf',
+      },
+      {
+        title: 'P.2 reading scheme of work.pdf',
+        description: 'Reading',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 reading scheme of work.pdf',
+      },
+      {
+        title: 'P.2 scheme music term ii.pdf',
+        description: 'Music',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 scheme music term ii.pdf',
+      },
+      {
+        title: 'P.2 SCHEME TERM ONE.pdf',
+        description: 'All subjects',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 SCHEME TERM ONE.pdf',
+      },
+      {
+        title: 'P.2 SECOND TERM SCHEME All subject.pdf',
+        description: 'All subjects',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 SECOND TERM SCHEME All subject.pdf',
+      },
+      {
+        title: 'P.2 SECOND TERM SCHEME.pdf',
+        description: 'All subjects',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 SECOND TERM SCHEME.pdf',
+      },
+      {
+        title: 'P.2 third term schemes.pdf',
+        description: 'Reading',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 third term schemes.pdf',
+      },
+      {
+        title: 'P2 third term schemes.pdf',
+        description: 'Reading',
+        price: 5000,
+        link: 'https://freshteacher.software/P2 third term schemes.pdf',
+      },
+      {
+        title: 'Scheme of work english p.2.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/Scheme of work english p.2.pdf',
+      },
+      {
         title: 'LUGANDA SCHEME P.2  TERM II',
         description: 'LUGANDA',
         price: 10000,

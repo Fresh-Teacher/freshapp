@@ -15,6 +15,122 @@ const PrimaryOneSchemesOfWork = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'music scheme of work for p.1 term 2.pdf',
+        description: 'Music',
+        price: 5000,
+        link: 'https://freshteacher.software/music scheme of work for p.1 term 2.pdf',
+      },
+      {
+        title: 'p.1 comprehension scheme term ii.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/p.1 comprehension scheme term ii.pdf',
+      }, {
+        title: 'P.1 English Comprehension term three scheme.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 English Comprehension term three scheme.pdf',
+      },
+      {
+        title: 'P.1 English Grammar Scheme of Work Term One.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 English Grammar Scheme of Work Term One.pdf',
+      }, {
+        title: 'P.1 LIT 1 SCHEMES OF WORK.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 LIT 1 SCHEMES OF WORK.pdf',
+      },
+      {
+        title: 'P.1 LIT 2 SCHEME OF WORK TERM 2.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 LIT 2 SCHEME OF WORK TERM 2.pdf',
+      }, {
+        title: 'P.1 LIT. II All Schemes.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 LIT. II All Schemes.pdf',
+      },
+      {
+        title: 'P.1 P.E SCHEME TERM 3.pdf',
+        description: 'Physical Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 P.E SCHEME TERM 3.pdf',
+      }, {
+        title: 'P.1 RE scheme of work.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 RE scheme of work.pdf',
+      },
+      {
+        title: 'p.1 reading scheme of work.pdf',
+        description: 'Reading',
+        price: 5000,
+        link: 'https://freshteacher.software/p.1 reading scheme of work.pdf',
+      }, {
+        title: 'P.1 Religious education SCHEME OF WORK.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 Religious education SCHEME OF WORK.pdf',
+      },
+      {
+        title: 'P.1 Scheme of work lit 2 third term.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 Scheme of work lit 2 third term.pdf',
+      }, {
+        title: 'P.1 SCHEMES OF WORK - TERM III.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 SCHEMES OF WORK - TERM III.pdf',
+      },
+      {
+        title: 'P.1 SCHEMES OF WORK TERM II.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 SCHEMES OF WORK TERM II.pdf',
+      }, {
+        title: 'P.1 SCHEMES term 2.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/p.1 SCHEMES term 2.pdf',
+      },
+      {
+        title: 'P.1 Term 1 reading scheme.pdf',
+        description: 'Reading',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 Term 1 reading scheme.pdf',
+      }, {
+        title: 'P.1 TERM 3 SCHEME.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 TERM 3 SCHEME.pdf',
+      },
+      {
+        title: 'P.1 THEMATIC SCHEMES term 2.pdf',
+        description: 'Numeracy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.1 THEMATIC SCHEMES term 2.pdf',
+      }, {
+        title: 'P1 schemes of work.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P1 schemes of work.pdf',
+      },
+      {
+        title: 'P1 term 111 all subjects scheme.pdf',
+        description: 'Combined',
+        price: 5000,
+        link: 'https://freshteacher.software/p1 term 111 all subjects scheme.pdf',
+      }, {
+        title: 'scheme of work english p.1.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/scheme of work english p.1.pdf',
+      },
+      {
         title: 'LITERACY SCHEME P.1 TERM 2',
         description: 'LITERACY',
         price: 10000,
@@ -43,7 +159,7 @@ const PrimaryOneSchemesOfWork = () => {
         description: 'LITERACY',
         price: 2000,
         link: 'https://freshteacher.software/P.I LITERACY SCHEME OF WORK TERM III.pdf',
-      },{
+      }, {
         title: 'P.I LITERACY TERM I SCHEME OF WORK',
         description: 'LITERACY',
         price: 10000,
@@ -72,7 +188,7 @@ const PrimaryOneSchemesOfWork = () => {
         description: 'Religious Education',
         price: 2000,
         link: 'https://freshteacher.software/P.I R.E  SCHEME OF WORK TERM I.pdf',
-      },{
+      }, {
         title: 'P.I READING SCHEME OF WORK TERM I',
         description: 'READING',
         price: 10000,

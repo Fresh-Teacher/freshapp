@@ -15,6 +15,271 @@ const PrimaryThreeLessonNotes = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.3   Mathematics All Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3   Mathematics All Terms.pdf',
+      },
+      {
+        title: 'P.3  Mathematics All Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3  Mathematics All Terms.pdf',
+      },
+      {
+        title: 'P.3  Mathematics Term Two.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3  Mathematics Term Two.pdf',
+      },
+      {
+        title: 'P.3 C.R.E Term One.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 C.R.E Term One.pdf',
+      },
+      {
+        title: 'P.3 C.R.E Term Two.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 C.R.E Term Two.pdf',
+      },
+      {
+        title: 'P.3 C.R.E.Term Three.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 C.R.E.Term Three.pdf',
+      },
+      {
+        title: 'P.3 COMPOSITION TERM 3.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 COMPOSITION TERM 3.pdf',
+      },
+      {
+        title: 'P.3 English  All Terms.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English  All Terms.pdf',
+      },
+      {
+        title: 'P.3 English All Terms.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English All Terms.pdf',
+      },
+      {
+        title: 'P.3 English Composition Term 3.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Composition Term 3.pdf',
+      },
+      {
+        title: 'P.3 English Comprehension Term 3.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Comprehension Term 3.pdf',
+      },
+      {
+        title: 'P.3 English Grammar Term III.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Grammar Term III.pdf',
+      },
+      {
+        title: 'P.3 English Grammar Term One.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Grammar Term One.pdf',
+      },
+      {
+        title: 'P.3 English Term III.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Term III.pdf',
+      },
+      {
+        title: 'P.3 English Term One.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Term One.pdf',
+      },
+      {
+        title: 'P.3 English Term Two.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 English Term Two.pdf',
+      },
+      {
+        title: 'P.3 I.R.E Term 1 _ 2.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 I.R.E Term 1 _ 2.pdf',
+      },
+      {
+        title: 'P.3 IRE TERM 2 _3.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 IRE TERM 2 _3.pdf',
+      },
+      {
+        title: 'P.3 IRE Terms 1 _ 2.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 IRE Terms 1 _ 2.pdf',
+      },
+      {
+        title: 'P.3 Literacy One All  Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One All  Terms.pdf',
+      },
+      {
+        title: 'P.3 Literacy One All Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One All Terms.pdf',
+      },
+      {
+        title: 'P.3 Literacy One Term  Three.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One Term  Three.pdf',
+      },
+      {
+        title: 'P.3 Literacy One Term One.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One Term One.pdf',
+      },
+      {
+        title: 'P.3 Literacy One Term Three.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One Term Three.pdf',
+      },
+      {
+        title: 'P.3 Literacy One Term Two.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy One Term Two.pdf',
+      },
+      {
+        title: 'P.3 Literacy Two  All Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two  All Terms.pdf',
+      },
+      {
+        title: 'P.3 Literacy Two All Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two All Terms.pdf',
+      },
+      {
+        title: 'P.3 Literacy Two Term  One.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two Term  One.pdf',
+      },
+      {
+        title: 'P.3 Literacy Two Term Three.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two Term Three.pdf',
+      },
+      {
+        title: 'P.3 Literacy Two Term Two .pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two Term Two .pdf',
+      },
+      {
+        title: 'P.3 Literacy Two Term Two.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Literacy Two Term Two.pdf',
+      },
+      {
+        title: 'P.3 Mathematics  All Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Mathematics  All Terms.pdf',
+      },
+      {
+        title: 'P.3 Mathematics All Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Mathematics All Terms.pdf',
+      },
+      {
+        title: 'P.3 MATHEMATICS LESSON NOTES .pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 MATHEMATICS LESSON NOTES .pdf',
+      },
+      {
+        title: 'P.3 Mathematics Term  Three.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Mathematics Term  Three.pdf',
+      },
+      {
+        title: 'P.3 Mathematics Term Three.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3 Mathematics Term Three.pdf',
+      },
+      {
+        title: 'P.3-C.R.E.Term-Three.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3-C.R.E.Term-Three.pdf',
+      },
+      {
+        title: 'P.3-I.R.E-Term-1-2.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3-I.R.E-Term-1-2.pdf',
+      },
+      {
+        title: 'P.3-Mathematics-All-Terms-3.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.3-Mathematics-All-Terms-3.pdf',
+      },
+      {
+        title: 'P3 CRE term 3.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P3 CRE term 3.pdf',
+      },
+      {
+        title: 'P3 ENGLISH LESSON NOTES FOR TERM II.pdf',
+        description: 'ENGLISH',
+        price: 5000,
+        link: 'https://freshteacher.software/P3 ENGLISH LESSON NOTES FOR TERM II.pdf',
+      },
+      {
+        title: 'P3 LITERACY I.pdf',
+        description: 'LITERACY',
+        price: 5000,
+        link: 'https://freshteacher.software/P3 LITERACY I.pdf',
+      },
+      {
+        title: 'P3 Literacy One Term Three.pdf',
+        description: 'LITERACY',
+        price: 5000,
+        link: 'https://freshteacher.software/P3 Literacy One Term Three.pdf',
+      },
+      {
+        title: 'PRIMARY THREE LITERACY ONE ALL TERMS.pdf',
+        description: 'LITERACY',
+        price: 5000,
+        link: 'https://freshteacher.software/PRIMARY THREE LITERACY ONE ALL TERMS.pdf',
+      },
+
+      {
         title: 'P.3  GRAMMAR LESSON NOTES FOR TERM III',
         description: 'English',
         price: 10000,
@@ -43,7 +308,7 @@ const PrimaryThreeLessonNotes = () => {
         description: 'English',
         price: 2000,
         link: 'https://freshteacher.software/P.3 GRAMMAR, COMPREHENSION & COMPREHENSION LESSON NOTES TERM III.pdf',
-      },{
+      }, {
         title: 'P.3 GRAMMAR, COMPREHENSION & COMPREHENSION TERM I',
         description: 'English',
         price: 10000,
@@ -72,7 +337,7 @@ const PrimaryThreeLessonNotes = () => {
         description: 'Literacy',
         price: 2000,
         link: 'https://freshteacher.software/P.3 LITERACY 1B LESSON NOTES TERM II.pdf',
-      },{
+      }, {
         title: 'P.3 LITERACY I A TERM I',
         description: 'Literacy',
         price: 10000,
@@ -101,7 +366,7 @@ const PrimaryThreeLessonNotes = () => {
         description: 'MATHEMATICS',
         price: 2500,
         link: 'https://freshteacher.software/P.3 MATHEMATICS LESSON NOTES TERM 1.pdf',
-      },{
+      }, {
         title: 'P.3 MATHEMATICS LESSON NOTES TERM I',
         description: 'MATHEMATICS',
         price: 37000,
@@ -130,7 +395,7 @@ const PrimaryThreeLessonNotes = () => {
         description: 'Religious Education',
         price: 24800,
         link: 'https://freshteacher.software/P.3 R.E LESSON NOTES TERM III.pdf',
-      },{
+      }, {
         title: 'P.3 READING LESSON NOTES TERM I',
         description: 'READING',
         price: 86000,

@@ -15,8 +15,146 @@ const PrimaryTwoLessonNotes = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.2 CRE All Terms.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 CRE All Terms.pdf',
+      },
+      {
+        title: 'P.2 CRE Scheme  Notes.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 CRE Scheme  Notes.pdf',
+      },
+      {
+        title: 'P.2 English All Terms.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 English All Terms.pdf',
+      },
+      {
+        title: 'P.2 English Comprehension Term Three.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 English Comprehension Term Three.pdf',
+      },
+      {
+        title: 'P.2 English Term One.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 English Term One.pdf',
+      },
+      {
+        title: 'P.2 English Term Two.pdf',
+        description: 'English',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 English Term Two.pdf',
+      },
+      {
+        title: 'P.2 LIT TERM 1.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 LIT TERM 1.pdf',
+      },
+      {
+        title: 'P.2 Literacy One All Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Literacy One All Terms.pdf',
+      },
+      {
+        title: 'P.2 Literacy One Term Three.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Literacy One Term Three.pdf',
+      },
+      {
+        title: 'P.2 Literacy Two All Terms.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Literacy Two All Terms.pdf',
+      },
+      {
+        title: 'P.2 Literacy Two Term Three.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Literacy Two Term Three.pdf',
+      },
+      {
+        title: 'P.2 Literacy Two Term Two.pdf',
+        description: 'Literacy',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Literacy Two Term Two.pdf',
+      },
+      {
+        title: 'P.2 Mathematics All  Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Mathematics All  Terms.pdf',
+      },
+      {
+        title: 'P.2 Mathematics All Terms.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Mathematics All Terms.pdf',
+      },
+      {
+        title: 'P.2 Mathematics Term Three.pdf',
+        description: 'Mathematics',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 Mathematics Term Three.pdf',
+      },
+      {
+        title: 'P.2 News Term I.pdf',
+        description: 'News',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 News Term I.pdf',
+      },
+      {
+        title: 'P.2 P.E Term I.pdf',
+        description: 'Physical Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 P.E Term I.pdf',
+      },
+      {
+        title: 'P.2 P.E Term III.pdf',
+        description: 'Physical Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 P.E Term III.pdf',
+      },
+      {
+        title: 'P.2 R.E All  Terms.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 R.E All  Terms.pdf',
+      },
+      {
+        title: 'P.2 R.E All Terms.pdf',
+        description: 'Religious Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 R.E All Terms.pdf',
+      },
+      {
+        title: 'P.2 READING LESSON NOTES.pdf',
+        description: 'READING',
+        price: 5000,
+        link: 'https://freshteacher.software/P.2 READING LESSON NOTES.pdf',
+      },
+      {
+        title: 'P2 NUMERACY ALL TERMS.pdf',
+        description: 'NUMERACY',
+        price: 5000,
+        link: 'https://freshteacher.software/P2 NUMERACY ALL TERMS.pdf',
+      },
+      {
+        title: 'P2 PE TERM III.pdf',
+        description: 'Physical Education',
+        price: 5000,
+        link: 'https://freshteacher.software/P2 PE TERM III.pdf',
+      },
+      {
         title: 'P. 2  MATHEMATICS LESSON NOTES TERM III',
-        description: 'ENGLISH',
+        description: 'MATHEMATICS',
         price: 10000,
         link: 'https://freshteacher.software/P. 2  MATHEMATICS LESSON NOTES TERM III.pdf',
       },
@@ -142,6 +280,8 @@ const PrimaryTwoLessonNotes = () => {
         price: 11000,
         link: 'https://freshteacher.software/P.2 READING LESSON NOTES TERM III.pdf',
       },
+
+      
       
     ];
 
