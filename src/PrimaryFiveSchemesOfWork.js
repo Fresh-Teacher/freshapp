@@ -47,7 +47,7 @@ const PrimaryFiveSchemesOfWork = () => {
         title: 'P.5 INTEGRATED SCIENCE SCHEME TERM II',
         description: 'SCIENCE',
         price: 10000,
-        link: 'https://freshteacher.software/P.5 INTEGRATED SCIENCE SCHEME TERM II.pdf,'
+        link: 'https://freshteacher.software/P.5 INTEGRATED SCIENCE SCHEME TERM II.pdf'
       },
       {
         title: 'P.5 MATHEMATICS SCHEME  TERM 1',
