@@ -15,6 +15,31 @@ const PrimaryFourLessonNotes = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'SST LESSON NOTES FOR P.4 ALL TERMS (copy)',
+        description: '',
+        price: 5000,
+        link: 'https://freshteacher.software/SST LESSON NOTES FOR P.4 ALL TERMS (copy).pdf',
+      },
+      {
+        title: 'P.4 ENGLISH LESSON NOTES ALL TERMS',
+        description: '',
+        price: 5000,
+        link: 'https://freshteacher.software/P.4 ENGLISH LESSON NOTES ALL TERMS.pdf',
+      },
+      {
+        title: 'P4 MATHS NOTES TERMS I II',
+        description: '',
+        price: 5000,
+        link: 'https://freshteacher.software/P4 MATHS NOTES TERMS I II.pdf',
+      },
+      {
+        title: 'P4 SCIENCE LESSON NOTES ALL TERMS',
+        description: '',
+        price: 5000,
+        link: 'https://freshteacher.software/P4 SCIENCE LESSON NOTES ALL TERMS.pdf',
+      },
+      
+      {
         title: 'P.4 COMPOSITION AND COMPREHENSION LESSON NOTES TERM II',
         description: 'English',
         price: 10000,
