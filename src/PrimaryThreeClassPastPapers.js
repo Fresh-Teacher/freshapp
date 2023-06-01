@@ -14,6 +14,73 @@ const PrimaryThreeClassPastPapers = () => {
 
   useEffect(() => {
     const sampleData = [
+      
+      {
+        title: 'ENGLISH (2)',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/ENGLISH (2).pdf',
+      },
+      {
+        title: 'ENGLISH',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/ENGLISH.pdf',
+      },
+      {
+        title: 'LITERACY I (SCIENCE)',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/LITERACY I (SCIENCE).pdf',
+      },
+      {
+        title: 'MATHEMATIC',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/MATHEMATIC.pdf',
+      },
+      {
+        title: 'Mathematics P_3 End of Term I Examination, 2018',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/Mathematics P_3 End of Term I Examination, 2018.pdf',
+      },
+      {
+        title: 'P.3 ENGLISH LANGUAGE',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/P.3 ENGLISH LANGUAGE.pdf',
+      },
+      {
+        title: 'P.3M',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/P.3M.pdf',
+      },
+      {
+        title: 'p3 eng. mid term 3',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/p3 eng. mid term 3.pdf',
+      },
+      {
+        title: 'p3 lit2',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/p3 lit2.pdf',
+      },
+      {
+        title: 'p3 mtc mid term 3',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/p3 mtc mid term 3.pdf',
+      },
+      {
+        title: 'R.E END OF TERM TWO',
+        description: 'Primary Three',
+        price: 10000,
+        link: 'https://freshteacher.software/R.E END OF TERM TWO.pdf',
+      },
       {
         title: 'EOT II P.3 MATH 2020',
         description: 'Primary Three',

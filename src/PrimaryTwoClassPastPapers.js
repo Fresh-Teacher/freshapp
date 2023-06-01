@@ -20,6 +20,7 @@ const PrimaryTwoClassPastPapers = () => {
         price: 10000,
         link: 'https://freshteacher.software/P. 2 MTC SET I.pdf',
       },
+      
       {
         title: 'P. 2 Package   4',
         description: 'Primary Two',

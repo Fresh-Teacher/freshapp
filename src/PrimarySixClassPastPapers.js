@@ -15,6 +15,43 @@ const PrimarySixClassPastPapers = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.6 SST Revision booklet',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/P.6 SST Revision booklet.pdf',
+      },
+      {
+        title: 'P.6 MATH END OF SEPT 2020',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/P.6 MATH END OF SEPT 2020.pdf',
+      },
+      {
+        title: 'P.6.SCI',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/P.6.SCI.pdf',
+      },
+      {
+        title: 'P6 MATH FRONT PAGE',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/P6 MATH FRONT PAGE.pdf',
+      },
+      {
+        title: 'P6 SST FRONT PAGE',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/P6 SST FRONT PAGE.pdf',
+      },
+      {
+        title: 'primary six Social studies COVID-19',
+        description: 'Primary Six',
+        price: 10000,
+        link: 'https://freshteacher.software/primary six Social studies COVID-19.pdf',
+      },
+      
+      {
         title: 'BOT III P6 ENG',
         description: 'Primary Six',
         price: 10000,

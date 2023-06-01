@@ -15,6 +15,36 @@ const PrimaryFourClassPastPapers = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.4 Math Revision booklet',
+        description: 'Primary Four',
+        price: 10000,
+        link: 'https://freshteacher.software/P.4 Math Revision booklet.pdf',
+      },
+      {
+        title: 'p4 mid term 3 eng',
+        description: 'Primary Four',
+        price: 10000,
+        link: 'https://freshteacher.software/p4 mid term 3 eng.pdf',
+      },
+      {
+        title: 'p4 mid term 3 sipro',
+        description: 'Primary Four',
+        price: 10000,
+        link: 'https://freshteacher.software/p4 mid term 3 sipro.pdf',
+      },
+      {
+        title: 'PRIMARY FOUR SCIENCE HOLIDAY WORK',
+        description: 'Primary Four',
+        price: 10000,
+        link: 'https://freshteacher.software/PRIMARY FOUR SCIENCE HOLIDAY WORK.pdf',
+      },
+      {
+        title: 'primary Four social studies COVID-19 doc',
+        description: 'Primary Four',
+        price: 10000,
+        link: 'https://freshteacher.software/primary Four social studies COVID-19 doc.pdf',
+      },
+      {
         title: 'B.O.T III P.4 SCIENCE, 2019',
         description: 'Primary Four',
         price: 10000,

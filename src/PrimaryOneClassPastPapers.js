@@ -15,6 +15,61 @@ const PrimaryOneClassPastPapers = () => {
   useEffect(() => {
     const sampleData = [
       {
+        title: 'P.1 EXAM',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P.1 EXAM.pdf',
+      },
+      {
+        title: 'P.1 EXAMINATION',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P.1 EXAMINATION.pdf',
+      },
+      {
+        title: 'P.1 Lit 1A Revision booklet',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P.1 Lit 1A Revision booklet.pdf',
+      },
+      {
+        title: 'P.1 READING TERM III',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P.1 READING TERM III.pdf',
+      },
+      {
+        title: 'P.1 READING',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P.1 READING.pdf',
+      },
+      {
+        title: 'P1 EXAM',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/P1 EXAM.pdf',
+      },
+      {
+        title: 'p1 lit1',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/p1 lit1.pdf',
+      },
+      {
+        title: 'p1 mtc',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/p1 mtc.pdf',
+      },
+      {
+        title: 'Sight Word Poetry Pages (grades PreK-2)',
+        description: 'Primary One',
+        price: 10000,
+        link: 'https://freshteacher.software/Sight Word Poetry Pages (grades PreK-2).pdf',
+      },
+      
+      {
         title: 'P_1_MATHS_REVISION_SET_I_2021_MOTHERCARE_PREPARATORY_SCHOOLS_1',
         description: 'Primary One',
         price: 10000,
