@@ -15,179 +15,24 @@ const SeniorFiveClassPastPapers = () => {
   useEffect(() => {
     const sampleData = [
       {
-        title: 'Past Papers',
+        title: 'S5 Applied math qns',
         description: 'Senior Five',
         price: 10000,
-        link: 'https://freshteacher.software/sample.pdf',
+        link: 'https://freshteacher.software/S5 Applied math qns.pdf',
       },
       {
-        title: 'Past Papers',
+        title: 'S5 MATHS PAPER 1 2020 TERM 1',
         description: 'Senior Five',
         price: 15000,
-        link: 'https://freshteacher.software/sample.pdf',
+        link: 'https://freshteacher.software/S5 MATHS PAPER 1 2020 TERM 1.pdf',
       },
       {
-        title: 'Past Papers',
+        title: 'S5 Bio 1 Mid Term 3',
         description: 'Senior Five',
         price: 25000,
-        link: 'https://freshteacher.software/sample.pdf',
+        link: 'https://freshteacher.software/S5bio1mid3.pdf',
       },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 55000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 2000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },{
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 10000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 15000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 25000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 55000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 2000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },{
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 10000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 15000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 25000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 55000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 2500,
-        link: 'https://freshteacher.software/sample.pdf',
-      },{
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 37000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 13000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 45000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 57500,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 24800,
-        link: 'https://freshteacher.software/sample.pdf',
-      },{
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 86000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 11000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 29000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 95000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 29000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },{
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 12400,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 15800,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 82000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 53000,
-        link: 'https://freshteacher.software/sample.pdf',      },
-      {
-        title: 'Past Papers',
-        description: 'Senior Five',
-        price: 13000,
-        link: 'https://freshteacher.software/sample.pdf',
-      },
+     
     ];
 
     setLessonNotes(sampleData);
