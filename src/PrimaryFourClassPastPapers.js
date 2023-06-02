@@ -534,6 +534,7 @@ const PrimaryFourClassPastPapers = () => {
         price: 95000,
         link: 'https://freshteacher.software/YET P.4_sst_Int__ens_1-1-.pdf',
       },
+      
     ];
 
     setLessonNotes(sampleData);

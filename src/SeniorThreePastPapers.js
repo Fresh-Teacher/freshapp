@@ -663,6 +663,24 @@ const SeniorThreeClassPastPapers = () => {
         link: 'https://freshteacher.software/s3-physics-exam-1.pdf',
       },
       {
+        title: 'FORM 3 SET 1 ASSIGNMENT-1',
+        description: 'Senior Three',
+        price: 10000,
+        link: 'https://freshteacher.software/FORM 3 SET 1 ASSIGNMENT-1.pdf',
+      },
+      {
+        title: 'FORM 3 SET 2 ASSIGNMENT',
+        description: 'Senior Three',
+        price: 10000,
+        link: 'https://freshteacher.software/FORM 3 SET 2 ASSIGNMENT.pdf',
+      },
+      {
+        title: 'FORM 3 SET 3 EXAMS',
+        description: 'Senior Three',
+        price: 10000,
+        link: 'https://freshteacher.software/FORM 3 SET 3 EXAMS.pdf',
+      },
+      {
         title: 'STAHIZA-S3-MATHEMTICS-RECESS-WORK-2020',
         description: 'Senior Three',
         price: 10000,
